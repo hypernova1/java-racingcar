@@ -30,13 +30,13 @@ public class StringTest {
         String data = "abc";
 
         assertThatThrownBy(() -> {
-            char character = data.charAt(3);
+            data.charAt(3);
         }).isInstanceOf(StringIndexOutOfBoundsException.class)
                 .hasMessageContaining("String index out of range: 3");
 
         assertThatExceptionOfType(StringIndexOutOfBoundsException.class)
                 .isThrownBy(() -> {
-                char character = data.charAt(3);
+                data.charAt(3);
         }).withMessageMatching("String index out of range: 3");
 
     }

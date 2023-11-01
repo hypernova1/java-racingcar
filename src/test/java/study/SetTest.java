@@ -25,7 +25,7 @@ public class SetTest {
         numbers.add(3);
     }
 
-    @Test()
+    @Test
     @DisplayName("주어진 Set 데이터의 길이를 구하는 테스트")
     void getSize() {
         assertThat(this.numbers.size()).isEqualTo(3);
